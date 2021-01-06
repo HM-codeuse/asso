@@ -1,57 +1,85 @@
+/* Import font used */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body {
+  
+  font-family: 'Roboto', sans-serif;
+  /* choisir une autre police d'écriture sur google fonts
+  font-family: 'Open Sans', sans-serif; */
+}
+/* About Titles */
+h1{
+  font-weight: bold;
+  color: rgb(3, 12, 138);
+  font-family:'Lobster',cursive;
+}
+h2{
+  font-family: 'Indie flower', 'cursive';
+}
+/* Supprimer espace entre fil d'ariane et box-introducion */
+
+/* About Header */
+.navbar{
+  background-color: rgb(13, 63, 199);
+}
+/* About Introduction */
+.box-introduction {
   background: url(images/ciel.jpg) no-repeat center fixed;
   background-size: cover;
-}
-
-.content {
-  display: flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content: space-between;
-}
-
-
-.title, .event-title {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-#presentation{
-  color: green;
-  font-weight: bold;
-}
-cite{
-  color: black;
-  font-weight: normal;
-}
-
-.box-presentation {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin: auto;
-  float: left;
+  justify-content: center;
+  font-family:'Lobster',cursive;
+  font-size: 2rem;
+  margin-top:none;
 }
 
-.box-presentation>img{
-  width:60%;
-  height:60%;
-  padding-top: 1rem;
-}
+
+/* About presentation */
+  .box-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    float: left;
+  }
+  
+  .box-presentation>img{
+    width:40%;
+    height:40%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* About event */
+
 .box-event{
   text-align: center;
-  padding: 1rem;
-  background-color: rgb(245, 159, 159);
-  border-radius: 10% 10% 10% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:2rem;
+  margin-right:5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* border-radius: 10% 10% 10% 10%; */
   margin: auto;
-  float: left;
+  
 }
 .box-event>img{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin:1rem;
   width:60%;
   height:60%;
-  padding-top: 1rem;
-  
 }
 
 .box-news {
@@ -83,3 +111,8 @@ h2{
 width: 100%;
  }
 }
+/* Ajouter une media querie pour cacher le texte de la presentation à partir de cette largeur */
+@media screen and (max-width:1640px) {
+
+}
+/* ajouter une média querie pour mettre tout sur une même colonne en mode portrait */
