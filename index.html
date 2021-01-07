@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graines de scientifiques</title>
   <meta class="description" content="Bienvenue sur cet espace d'échanges, de partages et de découverte des petits scientifiques français. Retrouvez toute l'actualité de l'association ainsi que les évènements organisés pour permettre à nos chercheurs en herbe de raconter leurs expériences.">
-  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <!-- css -->
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,8 +19,8 @@
     <div class="container-xxl">
       <div class="row">
         <div class="col-12">
-          <nav class="navbar navbar-dark navbar-expand-lg" style="background-color:rgb(1, 107, 54);">
-            <a class="navbar-brand" href="#">Graines de scientifiques</a>
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Graines de scientifiques</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor"
@@ -52,7 +54,7 @@
       </div>
       <div class="row">
         <nav class="col-12" aria-label="breadcrumb">
-          <ol class="breadcrumb bg-white">
+          <ol class="breadcrumb">
             <li class="breadcrumb-item" aria-current="page"><a href="index.html">Accueil</a> </li>
           </ol>
         </nav>
@@ -61,32 +63,46 @@
   </header>
   
   <main>
-    <div class="content">
-      <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 box-presentation">
-          <h1 class="title">
-            Bienvenue sur notre blog
-          </h1>
-          <img src="images/labo-sciences.jpg" alt="" class="logo">
-          <p id="presentation">
-          Découvre les expériences de nos savants en herbe et partage aussi tes reproductions ou tes propres expériences. <br>
-          <cite>Un bien n'est agréable que si on le partage.Sénèque</cite>
-          </p>
-        </div>
-        <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 box-event">
-          <h2> Evenement à ne pas manquer!!!</h2>
-            <img src="images/questions-champion.jpg" alt="">
-            <h3 class="event-title">QUESTIONS POUR UN SAVANT</h3>
-              <p>
-                Venez vous affronter pour tenter de remporter un pass d'un an pour la cité des sciences de Paris. Testez vos connaissances face à d'autres concurrents venus des 4 coins de la France et devenez le champion des scientifiques en herbe.
-              </p>
-              <a class="btn btn-outline-danger" href="Questions pour un savant.html"> Cliquez-ici pour en savoir plus </a>
-        </div>
+    <div class="container-fluid">
+      <div class="row box-introduction">
+        <h1 class="title">
+         Bienvenue sur notre blog
+        </h1>
+        <p><strong>Découvre les expériences de nos savants en herbe et partage aussi tes reproductions ou tes propres expériences.</strong><br>
+        <blockquote class="blockquote">
+         <p>Un bien n'est agréable que si on le partage.</p></blockquote>
+         <figcaption class="blockquote-footer">
+          Sénèque
+        </figcaption>
+        </p>
       </div>
-      <br>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content"id="presentation-event">
+        <div class="card text-center col-md-5 col-lg-5 col-sm-12 col-xs-12 box-presentation" >
+          <h2>Qui sommes-nous?</h2>
+          <img src="images/animateur scientifique.jpg" class="img-fluid" alt="">
+          <div class="card-body">
+            <p>Nous sommes une association d'animateurs amoureux de sciences et soucieux de partager ce savoir. Nos objectifs sont de rendre la science accessible dès le plus jeune âge et d'accompagner les parents ou les professionnels de la petite enfance dans la transmission du savoir de façon ludique.
+                  Ce blog est aussi un lieu de partage des belles réalisations de nos petits savants.
+              <br>
+            </p>
+          </div>
+      </div>
+          <div class="card text-center col-md-5 col-lg-5 col-sm-12 col-xs-12 box-event" >
+            <img src="images/questions-champion.jpg" class="img-fluid" alt="">
+            <div class="card-body">
+              <h2 class="card-title">QUESTIONS POUR UN SAVANT, L'EVENEMENT A NE PAS MANQUER!!!</h2>
+              <p class="card-text">Venez vous affronter pour tenter de remporter un pass d'un an pour la cité des sciences de Paris. Testez vos connaissances face à d'autres concurrents venus des 4 coins de la France et devenez le champion des scientifiques en herbe.</p>
+              <a class="btn btn-outline-primary" href="Questions pour un savant.html"> Cliquez-ici pour en savoir plus </a>
+            </div>
+        </div>
+     
+    <div class="container-fluid">
       <div class="row">
         <div class="box-news">
-          <h2>Les expériences du mois</h2>
+          <h2>LES EXPERIENCES DU MOIS</h2>
           <div class="row">   
             <article class="col-md-2 col-lg-2 col-sm-12 col-xs-12 experiment1">
             <img src="images/electricite.jpg" class="img-thumbnail" alt="">
@@ -114,11 +130,12 @@
           </article>
         </div>          
       </div>
-      
+    </div>
       </div>
     </div>
+    </div>
   </main>
-  <footer class="footer">
+  <footer class="container-fluid footer-homepage">
     Réalisé par Hayiri MGOMRI, décembre 2020.
     <br>
     <a href="#">
@@ -143,4 +160,6 @@
     <!-- insérer les réseaux sociaux et le copyright -->
   </footer>
 </body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </html>

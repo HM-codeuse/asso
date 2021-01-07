@@ -50,7 +50,7 @@
     <div class="container-xxl">
       <div class="row">
         <div class="col-12">
-          <nav class="navbar navbar-dark navbar-expand-lg" style="background-color:rgb(1, 107, 54);">
+          <nav class="navbar navbar-dark navbar-expand-lg">
             <a class="navbar-brand" href="index-mobile-first.html">Graines de scientifiques</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,34 +92,35 @@
       </div>
     </div>
   </header>
-  <main style="padding: 10px; margin: 10px;">
+  <main>
+    <div class="container-fluid">
     <div class="row row-cols-2 g-2">
-      <section class="col-10">      
-        <h2>Les évènements à venir</h2>
+      <section class="col-10 content-event">      
+        <h1 class="text-center">Les évènements à venir</h1>
         <div class="row">
           <div class="col">
-            <div class="card h-100 text-center" style="align-items: center; padding: 1rem;">
-              <img src="images/halloween.jpg" class="card-img-top" alt="..." style="width: 400px; height: 300px; ">
+            <div class="card h-100 text-center box-halloween">
+              <img src="images/halloween.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Halloween des petits scientifiques</a></h5>  
+                <h2 class="card-title"><a href="#">Halloween des petits scientifiques</a></h2>  
                 <p class="card-text">Trouvez la bonne formule chimique pour concocter une potion magique. Cliquez sur le titre de la photo pour en savoir plus.</p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card h-100 text-center" style="align-items: center; padding: 1rem;">
-              <img src="images/champion.jpg" class="card-img-top" alt="..." style="width: 400px; height: 300px;">
+            <div class="card h-100 text-center box-champion">
+              <img src="images/champion.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title"><a href="Questions pour un savant.html">Questions pour un savant</a></h5>
+                <h2 class="card-title"><a href="Questions pour un savant.html">Questions pour un savant</a></h2>
                 <p class="card-text">Venez vous frotter aux meilleurs petits scientifiques de France et remportez un innoubliable trophée.Cliquez sur le titre de la photo pour en savoir plus.</p>
               </div>
             </div>
           </div>      
           <div class="col">
-            <div class="card h-100 text-center" style="align-items: center; padding: 1rem;">
-              <img src="images/projets.jpg" class="card-img-top" alt="..." style="width: 400px; height: 300px;">
+            <div class="card h-100 text-center box-projets">
+              <img src="images/projets.jpg" class="card-img-top img-fluid" alt="..."> 
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Vos projets en lumière</a></h5>
+                <h2 class="card-title"><a href="#">Vos projets en lumière</a></h2>
                 <p class="card-text">Saisissez l'opportunité de venir exposer un projet que vous aurez choisi, des chasseurs de talents seront présents parmi les visiteurs et sélectionneront les idées qui les séduiront le plus pour les présenter lors du salon de la science et de l'innovation.
                 Cliquez sur le titre de la photo pour en savoir plus.</p>
               </div>
@@ -127,7 +128,7 @@
           </div>
         </div>
       </section>
-      <aside class="col-2">
+      <aside class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
         <div class="col">
           <table class="table table-striped table-hover">
             <thead>
@@ -140,7 +141,7 @@
                 <th>Novembre 2020</th>
               </tr>
               <tr>
-                <th>Octombre 2020</th>
+                <th>Octobre 2020</th>
               </tr> 
               <tr>
                 <th>Septembre 2020</th>
@@ -178,8 +179,9 @@
         
       </aside>
    </div>
+  </div>
   </main>
-  <footer class="footer">
+  <footer class="container-fluid footer-eventspage">
     Réalisé par Hayiri MGOMRI, décembre 2020.
     <br>
     <a href="#">
