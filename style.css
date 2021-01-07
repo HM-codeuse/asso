@@ -8,7 +8,6 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-/* About Titles */
 h1{
   font-weight: bold;
   color: rgb(3, 12, 138);
@@ -17,14 +16,16 @@ h1{
 h2{
   font-family: 'Indie flower', 'cursive';
 }
-/* Supprimer espace entre fil d'ariane et box-introducion */
-
-/* About Header */
+@media screen and (max-width:1024px){
+  h2{
+    font-size:1.5rem;
+}
+}
 .navbar{
   background-color: rgb(13, 63, 199);
 }
 
-/* About Introduction */
+/* Styles of index.html */
 .box-introduction {
   background: url(images/ciel.jpg) no-repeat center fixed;
   background-size: cover;
@@ -37,16 +38,12 @@ h2{
   font-size: 2rem;
   margin-top:none;
 }
-
-/* About presentation and event sections */
 #presentation-event {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
  }
-
-/* About presentation */
-  .box-presentation{
+.box-presentation{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,17 +51,13 @@ h2{
     padding:2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
-  
-  .box-presentation>img{
+}
+.box-presentation>img{
     width:100%;
     height:auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-
-  /* About event */
-
 .box-event{
   text-align: center;
   display: flex;
@@ -72,7 +65,6 @@ h2{
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  
 }
 .box-event>img{
   padding-top: 1rem;
@@ -82,8 +74,6 @@ h2{
   width:100%;
   height:auto;
 }
-
-/* About news */
 .box-news {
   width: 100vw;
   background-color: rgb(4, 4, 78);
@@ -91,10 +81,13 @@ h2{
   text-align: center;
   align-items: flex-start;
   justify-content: space-evenly;
-  /* float: left; */
   color: white;
 }
-
+@media screen and (max-width:1390px){
+  .box-introduction{
+    font-size: 1rem;
+  }
+}
 .footer-homepage{
   background-color: black;
   color: white;
@@ -104,14 +97,7 @@ h2{
   bottom: 0;
 }
 
-@media screen and (max-width:1390px){
-  .box-introduction{
-    font-size: 1rem;
-  }
-}
-/* ajouter une média querie pour mettre tout sur une même colonne en mode portrait */
-
-/* About others files */
+/* Styles of the others files */
 
 .content-event, .content-game{
   margin-bottom: 1rem;
@@ -125,7 +111,6 @@ h2{
   width:100%;
   height:auto;
 }
-
 .box-champion, .box-halloween, .box-projets{
   align-items: center;
   padding: 1rem;
@@ -159,8 +144,4 @@ h2{
   }
 }
 
-@media screen and (max-width:1024px){
-  h2{
-    font-size:1.5rem;
-}
-}
+
