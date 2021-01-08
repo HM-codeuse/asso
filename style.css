@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 /* General styles of the websites */
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -17,12 +16,15 @@ h2{
   font-family: 'Indie flower', 'cursive';
 }
 @media screen and (max-width:1024px){
-  h2{
+h2{
     font-size:1.5rem;
 }
 }
 .navbar{
   background-color: rgb(13, 63, 199);
+}
+ol.breadcrumb{
+  margin-bottom: 0px;
 }
 
 /* Styles of index.html */
@@ -94,7 +96,6 @@ h2{
 }
 
 /* Styles of the others files */
-
 .content-event, .content-game{
   margin-bottom: 1rem;
 }
