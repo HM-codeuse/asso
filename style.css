@@ -96,6 +96,9 @@ ol.breadcrumb{
 }
 
 /* Styles of the others files */
+h2.text-center{
+  padding-bottom: 1rem;
+}
 .content-event, .content-game{
   margin-bottom: 1rem;
 }
@@ -123,6 +126,11 @@ ol.breadcrumb{
   bottom: 0;
 }
 
+section.col-md-6, aside.col-md-6
+{
+  width: 50vw;
+  padding: 1rem;
+}
 @media screen and (max-height:830px){
   .footer-eventspage, .footer-game{
     position:relative;

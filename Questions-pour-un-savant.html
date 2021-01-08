@@ -33,11 +33,11 @@
               <input type="text" class="form-control" id="firstname" placeholder="Otto">
             </div>
             <div class="form-group">
-                <label for="date">Date de naissance</label>
-                <input type="birthDate" class="form-control" id="BirthDate" placeholder="jj/mm/aaaa">
+                <label for="BirthDate">Date de naissance</label>
+                <input type="date" class="form-control" id="BirthDate">
             </div>
             <div class="form-group">
-              <label for="city">Lieu de résidence</label>
+              <label for="City">Lieu de résidence</label>
               <input type="text" class="form-control" id="City"> 
             </div>
           </form>
@@ -73,7 +73,7 @@
                   <a class="nav-link" href="#">Notre histoire</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Nos-évènements.html" aria="current-page">Nos évènements</a>
+                  <a class="nav-link" href="Nos-évènements.html">Nos évènements</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Nos découvertes et expériences</a>
@@ -90,7 +90,7 @@
       <div class="row">
         <nav class="col-12" aria-label="breadcrumb">
           <ol class="breadcrumb bg-white">
-            <li class="breadcrumb-item" ><a href="Nos évènements.html">Nos évènements</a></li>
+            <li class="breadcrumb-item" ><a href="Nos-évènements.html">Nos évènements</a></li>
             <li class="breadcrumb-item" ><a href="#">Janvier 2021</a></li>  
             <li class="breadcrumb-item" aria-current="page">Questions pour un savant</li>
           </ol>
@@ -101,9 +101,9 @@
 
   <main>
     <div class="container-fluid content-game">
-      <div class="row row-cols-1 row-cols-sm-2">
-        <section class="col">
-          <h2>Participer à l'événement : <small class="text-muted">Questions pour un savant</small></h2>
+      <div class="row justify-content">
+        <section class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+          <h2 class="text-center">Participer à l'événement : <small class="text-muted">Questions pour un savant</small></h2>
           <div class="card">
             <img src="images/cité-des-sciences.jpg" class="card-img-top rounded-lg" alt="">
             <div class="card-body">
@@ -140,8 +140,8 @@
             </div>
           </div>
         </section>
-        <aside>
-          <section class="col">
+        <aside class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+          <section>
             <h2 class="text-center">Nom des courageux challengers</h2>
             <table class="table table-hover text-center">
                 <thead class="thead-dark">
@@ -166,17 +166,32 @@
                     <td>Béatrice</td>
                     <td>7 ans</td>
                     <td>Perpignan</td>
-                </tr>
-                <tr>
-                  <td>Denis</td>
-                  <td>9 ans</td>
-                  <td>Septèmes-les-Vallons</td>
-                </tr>
-                <tr>
-                  <td>Harmine</td>
-                  <td>9 ans</td>
-                  <td>Gennevilliers</td>
-                </tr>
+                  </tr>
+                  <tr>
+                    <td>Denis</td>
+                    <td>9 ans</td>
+                    <td>Septèmes-les-Vallons</td>
+                    </tr>
+                  <tr>
+                    <td>Harmine</td>
+                    <td>9 ans</td>
+                    <td>Gennevilliers</td>
+                  </tr>
+                  <tr>
+                    <td>Céline</td>
+                    <td>6 ans</td>
+                    <td>Lyon</td>
+                  </tr>
+                  <tr>
+                    <td>Sacha</td>
+                    <td>11 ans</td>
+                    <td>Paris</td>
+                    </tr>
+                  <tr>
+                    <td>Noam</td>
+                    <td>7 ans</td>
+                    <td>Gap</td>
+                  </tr>
               </tbody>
             </table>
             <div class="progress">
