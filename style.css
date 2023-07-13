@@ -7,26 +7,47 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-h1{
+h1, h2, h3{
   font-weight: bold;
-  color: rgb(3, 12, 138);
   font-family:'Lobster',cursive;
 }
-h2{
-  font-family: 'Indie flower', 'cursive';
+
+h1 {
+  color: rgb(237, 189, 32);
 }
+
+h2 {
+  color: rgb(136, 107, 10);
+}
+
+h3 {
+  color: rgb(237, 189, 32);
+}
+
 @media screen and (max-width:1024px){
 h2{
     font-size:1.5rem;
 }
 }
-.navbar{
-  background-color: rgb(13, 63, 199);
-}
+
 ol.breadcrumb{
   margin-bottom: 0px;
 }
 
+.footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 /* Styles of index.html */
 .box-introduction {
   background: url(images/ciel.jpg) no-repeat center fixed;
@@ -73,26 +94,31 @@ ol.breadcrumb{
 }
 .box-news {
   width: 100vw;
-  background-color: rgb(4, 4, 78);
+  background-color: rgb(237, 189, 32);
   padding: 1rem;
   text-align: center;
   align-items: flex-start;
   justify-content: space-evenly;
   color: white;
 }
+
+.experience-title{
+  color: black;
+}
+
+.btn-style {
+  border: solid 1px black;
+  background-color: rgb(237, 189, 32);
+  border-radius: 30px;
+  padding:10px;
+  
+}
 @media screen and (max-width:1390px){
   .box-introduction{
     font-size: 1rem;
   }
 }
-.footer-homepage{
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding-top: 1rem;
-  position: relative;
-  bottom: 0;
-}
+
 
 /* Styles of the others files */
 h2.text-center{
@@ -130,6 +156,12 @@ section.col-md-6, aside.col-md-6
   width: 50vw;
   padding: 1rem;
 }
+.row-team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-height:830px){
   .footer-eventspage, .footer-game{
     position:relative;
